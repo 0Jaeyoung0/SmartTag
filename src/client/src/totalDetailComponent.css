@@ -1,0 +1,47 @@
+.title-container {
+    font-size: 25pt;
+    font-weight: 600;
+    color:azure;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.total-container {
+    color:azure;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.total-container-front {
+    font-size: 23pt;
+    font-weight: 200;
+}
+
+.total-container-value {
+    font-size: 25pt;
+    font-weight: 700;
+    color:aliceblue;
+}
+
+
+
+.detail-container-item {
+    background-color: rgb(17,17,28);
+    margin-left: 25px;
+    padding: 12px;
+    width: 220px;
+    height: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    color:aliceblue;
+}
+.detail-container-icon {
+    margin-right: 10px;
+}
+.detail-container-count {
+    margin-left: auto;
+    font-weight: 500;
+}

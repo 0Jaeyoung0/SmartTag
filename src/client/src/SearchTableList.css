@@ -1,0 +1,22 @@
+.search-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+}
+
+.search-list li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10pt;
+}
+
+.search-list li.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.no-results {
+    padding: 10px;
+    color: #888;
+}

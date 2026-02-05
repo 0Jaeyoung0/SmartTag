@@ -1,0 +1,1 @@
+export const urlDefault = 'https://221c-220-68-54-138.ngrok-free.app';//'https://6dad-220-68-54-138.ngrok-free.app';

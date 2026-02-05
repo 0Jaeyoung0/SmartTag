@@ -1,0 +1,114 @@
+
+.table-container {
+    margin: 20px;
+    margin-top: 5px;
+    padding: 20px;
+    color: #fff;
+    max-height: 600px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+  }
+
+
+  th {
+    background-color: rgb(48, 48, 62);
+  }
+  
+  .search-input {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #1e1e2d;
+    color: #f1f1f1;
+}
+
+.column-input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #1e1e2d;
+    color: #f1f1f1;
+}
+
+caption {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #f1f1f1; /* 캡션 글자 색상 */
+    text-align: left; /* 캡션 정렬 */
+}
+
+table caption {
+    position: sticky;
+}
+
+table thead {
+    position: sticky;
+}
+
+table tbody {
+    display: block;
+    max-height: 530px;
+    overflow-y: auto;
+}
+
+table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table thead, table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.database-container-title {
+    color: azure;
+    font-size: 24pt;
+    font-weight: 600;
+    margin-left: 25pt;
+    margin-top: 20pt;
+}
+
+.table-select-container {
+    display: flex;
+    margin-left: 30px;
+}
+
+.table-select {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.table-selected {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    color:dodgerblue;
+    background-color: rgb(17, 17, 28);
+}
+
+.table-select:hover{
+    color:dodgerblue;
+    background-color: rgb(17, 17, 28);
+}

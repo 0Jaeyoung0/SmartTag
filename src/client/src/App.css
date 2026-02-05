@@ -1,0 +1,119 @@
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 8vh auto 5vh; /* 3개의 행 정의: top, middle, bottom */
+  grid-template-columns: 1fr; /* 1개의 열로 설정 */
+  height: 100vh; /* 전체 화면 높이로 설정 */
+  color: white;
+}
+.top {
+  background-color: rgb(29, 29, 29);
+  grid-row: 1; /* 첫 번째 행에 배치 */
+}
+.title {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.mode-container {
+  width: 100%;
+  height: 100%;
+}
+
+.mode-container div{
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #e6e6e6;
+  padding: 8px;
+  align-items: center;
+}
+
+.mode-container div:hover {
+  background-color: gray;
+  cursor: pointer; 
+}
+
+.middle {
+  display: grid;
+  grid-template-rows: auto; /* 중간 영역 내부에서는 자동으로 행 크기 조정 */
+  grid-template-columns: auto 1fr auto; /* 가운데 영역을 가로로 3개의 열로 나눔 */
+  grid-row: 2; /* 두 번째 행에 배치 */
+  overflow: hidden;
+}
+.left, .right {
+  background-color: rgb(42, 42, 44);
+}
+.left {
+  width: 18vh;
+  grid-column: 1; /* 첫 번째 열에 배치 */
+}
+.MapContainer {
+  grid-column: 2; /* 두 번째 열에 배치 */
+}
+.right {
+  width: 50vh;
+  grid-column: 3; /* 세 번째 열에 배치 */
+  overflow: auto;
+}
+
+.middle-main {
+  grid-column: 2;
+  background-color:rgb(17, 17, 28);
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+.middle-right {
+  width: 5vh;
+  grid-column: 3;
+  background-color: rgb(42,42,44);
+}
+
+.bottom {
+  background-color: rgb(26, 26, 26);
+  grid-row: 3; /* 세 번째 행에 배치 */
+}
+.ItemTab {
+  z-index: 1000;
+}
+
+.search-location-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-location-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.search-list {
+  color: black;
+}
+
+.search-location-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.search-location-button:hover {
+  background-color: #0056b3;
+}

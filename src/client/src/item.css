@@ -1,0 +1,147 @@
+/* 전체 박스 크기 조정 (스크롤 방지) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* padding과 border를 요소의 총 크기에 포함시킴 */
+}
+
+/* 아이템 컨테이너 스타일 */
+.item-container {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid #444; /* 더 어두운 테두리 */
+    border-radius: 10px; /* 둥글게 */
+    background-color: #333; /* 어두운 배경 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    color: #ddd;
+    width: 100%;
+    max-width: 500px; /* 최대 너비 설정 */
+    margin: 10px auto; /* 가운데 정렬 */
+    position: relative; /* 아이템 정보 스타일을 위한 relative */
+    user-select: none; /* 클릭 시 텍스트 선택 방지 */
+    overflow: hidden; /* 가로 스크롤 방지 */
+}
+
+/* 아이템 컨테이너 hover 스타일 */
+.item-container:hover {
+    background-color: #444; /* 마우스 오버 시 배경 밝게 */
+    cursor: pointer;
+}
+
+/* 선택된 상태 */
+.item-container-selected {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid brown; /* 더 어두운 테두리 */
+    border-radius: 10px; /* 둥글게 */
+    background-color: brown; /* 어두운 배경 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    color: white;
+    width: 100%;
+    max-width: 500px; /* 최대 너비 설정 */
+    margin: 10px auto; /* 가운데 정렬 */
+    position: relative; /* 아이템 정보 스타일을 위한 relative */
+    user-select: none; /* 클릭 시 텍스트 선택 방지 */
+    overflow: hidden; /* 가로 스크롤 방지 */
+    cursor: pointer;
+}
+/* 검색된 상태 */
+.item-container-searched {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid #1e90ff; /* 더 어두운 테두리 */
+    border-radius: 10px; /* 둥글게 */
+    background-color: #1e90ff; /* 어두운 배경 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    color: white;
+    width: 100%;
+    max-width: 500px; /* 최대 너비 설정 */
+    margin: 10px auto; /* 가운데 정렬 */
+    position: relative; /* 아이템 정보 스타일을 위한 relative */
+    user-select: none; /* 클릭 시 텍스트 선택 방지 */
+    overflow: hidden; /* 가로 스크롤 방지 */
+}
+
+/* 이미지 부분 스타일 */
+.item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100px; /* 이미지 크기 축소 */
+    height: 120px; /* 이미지 크기 축소 */
+    background-color: #222;
+    border-radius: 8px; /* 이미지 테두리 둥글게 */
+    padding: 8px;
+}
+
+.itemImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지를 컨테이너에 맞게 크기 조정 */
+    border-radius: 6px;
+    border: 2px solid #444;
+}
+
+/* 아이템 상세 정보 */
+.item-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 두 열로 나눔 */
+    gap: 8px; /* 간격 축소 */
+    color: white;
+    font-size: 10pt; /* 글자 크기 축소 */
+    line-height: 1.4;
+    width: 100%;
+}
+
+.item-name {
+    grid-column: 1 / 3;
+    font-size: 12pt; /* 제목 글자 크기 축소 */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 6px;
+    border-bottom: 2px solid #aaa;
+    padding-bottom: 4px;
+}
+
+.item-type, .item-id {
+    background-color: #444;
+    padding: 6px; /* 패딩 축소 */
+    border-radius: 5px;
+    font-size: 9pt; /* 폰트 크기 축소 */
+    color: white;
+    text-align: left;
+    width: 80%;
+}
+
+.item-type {
+    grid-column: 1;
+}
+
+.item-id {
+    grid-column: 2;
+}
+
+.item-timestamp {
+    grid-column: 1 / 3;
+    font-size: 10pt; /* 폰트 크기 축소 */
+    color: white;
+    text-align: center;
+    margin-top: 6px;
+    border-top: 2px solid #aaa;
+    padding-top: 4px;
+}
+
+/* 레이블 스타일 */
+.label {
+    font-weight: bold;
+    color: #aaa; /* 레이블 색상 */
+    margin-right: 5px;
+}
