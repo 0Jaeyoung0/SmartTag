@@ -2,6 +2,11 @@
 
 이 프로젝트는 라즈베리 파이를 이용한 GPS 위치 추적 클라이언트와 이를 수집하고 시각화하는 서버 및 웹 애플리케이션으로 구성되어 있습니다. 자체 지도 서버(Tileserver-GL)를 운영하여 오프라인 환경에서도 지도를 서비스할 수 있습니다.
 
+<p align="center">
+  <img src="./image/1.png">
+  <img src="./image/2.png">
+</p>
+
 ## 📂 프로젝트 구조
 
 ```bash
@@ -36,6 +41,10 @@ start_servers.sh     # 전체 서버 실행 스크립트
 ---
 
 ## 🛠 구성 요소 상세
+
+<p align="center">
+  <img src="./image/3.png">
+</p>
 
 ### 1. GPS 클라이언트 (`src/gps/`)
 라즈베리 파이에서 실행되며, LTE 모듈을 통해 GPS 좌표를 수집하여 서버로 전송합니다.
